@@ -1,13 +1,33 @@
 // Third part:
+console.log('Script file is loaded.');
 
 $('h1').html('This is done by <em>JavaScript</em>!');
+
+$('h2').toggleClass('blue');
+$('h2').toggleClass('blue');
+$('h2').toggleClass('blue');
+
+let name = 'Laszlo';
+let age = 44;
+
+function myLittleFunction() {
+$('main').append('<p>A p is appended in the main.</p>');
 $('p').css('border', '1px solid red');
 $('p').css('padding', '10px');
-$('h2').toggleClass('blue');
-$('h2').toggleClass('blue');
-$('h2').toggleClass('blue');
+}
+
+myLittleFunction();
+myLittleFunction();
+
+$('#add').click(myLittleFunction);
+$('#remove').click(function () {
+    $('p:last-child').remove();
+});
+
 // az ismétlés törli az előzó parancsot, újrabeírva megjeleníti
-console.log('Script file is loaded.');
+
+
+
 
 // Single line comment
 
